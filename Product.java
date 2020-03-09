@@ -1,5 +1,3 @@
-import java.text.NumberFormat;
-
 //------------------------------------------------------------------------------
 //This is a Class named Product
 //Susan Driskill
@@ -7,10 +5,13 @@ import java.text.NumberFormat;
 //Assignment 9
 //------------------------------------------------------------------------------
 
+//Import Number Format
+import java.text.NumberFormat;
+
 public class Product {
 	
 	//Fields
-	//Product code, Product description, product Price, product Count
+	//Product code, product description, product price, product count
 	private int code;
 	private String description;
 	private double price;
@@ -71,7 +72,7 @@ public class Product {
 	}
 	
 	public String toString() {
-		return "" + "Code: " + code + ". Description: " + description + ". Count: " + count + ". Price: ";
+		return "Code: " + code + ". Description: " + description + ". Price: " + getPriceFormatted() + ". Count: " + count;
 	}
 
 }
